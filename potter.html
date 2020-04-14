@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Harry Potter</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+	<header>
+
+				<nav class="navbar navbar-inverse" id="barrita">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>                        
+							</button>
+							<a class="navbar-brand" href="#">
+								<div class="box">
+									<div class="inner">
+										<span>Loki's Games</span>
+									</div>
+									<div class="inner">
+										<span>Loki's Games</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li >
+									<a  href="pc.html">PC </a>
+									
+								</li>
+								<li >
+									<a href="ps.html">PS4 </a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Frikadas <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="potter.html">Harry Potter</a></li>
+									
+									</ul>
+								</li>
+								<li><a href="noticias.html">Noticias</a></li>
+								<li><a href="conocernos.html">Ven a conocernos</a></li>
+							</ul>
+
+
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="registro.html"><span class="glyphicon glyphicon-user"></span> Regístrate</a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Inicia sesión<span class="caret"></span></a>
+									<ul class="dropdown-menu w400">
+										<li>
+
+											<form name="logueo" class="form-vertical">
+												<div class="form-group">
+													<label for="usuario"  class=" control-label">Usuario</label>
+													<div class="col-sm-10">
+														<input type="text" name="usuario" class="form-control" id="user" placeholder="Usuario">
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="password" class="col-sm-2 control-label">Pass</label>
+													<div class="col-sm-10">
+														<input type="password" name="pass" id="inputPass" class="form-control"   placeholder="Contraseña">
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-offset-2 col-sm-10">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox"> Recuerdame
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-offset-2 col-sm-10">
+														<button type="button" onclick="login()" class="btn btn-default">Inicia sesion</button>
+													</div>
+												</div>
+											</form>
+
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-5 col-md-offset-1 ">
+				<div class="tiendita fondito">
+					<div class="row">
+						<img class=" zoom imagenTiendita img-responsive col-md-5 " src="img/varitas200.png" alt="">
+						<div class="col-md-5" >
+							<p class="textoTiendita">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam repudiandae, vitae error quae molestiae ea cum dicta hic sequi harum illum optio odio reiciendis iste et, repellendus a voluptas quasi.</p>
+							<p class="precioTiendita">17.50<span class="fas fa-euro-sign"></span></p>
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3">
+							<button class="btn btn-warning">Comprar</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-5 col-md-offset-1 ">
+				<div class="tiendita fondito">
+					<div class="row">
+
+						<img class=" zoom imagenTiendita img-responsive col-md-5" src="img/hermione.jpg" alt="">
+						<div class="col-md-5" >
+							<p class="textoTiendita">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi veritatis nam enim porro, rem provident eveniet facere vel ab omnis, voluptatibus esse, expedita at, tempora veniam fugit. Quam, fuga ipsam.</p>
+							<p class="precioTiendita">20.60<span class="fas fa-euro-sign"></span></p>
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3">
+							<button class="btn btn-warning">Comprar</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-5 col-md-offset-1 ">
+				<div class="tiendita fondito">
+					<div class="row">
+						<img class=" zoom imagenTiendita img-responsive col-md-5" src="img/funkoDobby.jpg" alt="">
+						<div class="col-md-5 col-md-offset-1" >
+							<p class="textoTiendita">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, velit, consectetur. Quam, in odit dignissimos, repellendus maiores quidem ab, doloremque iste ea ad tempore assumenda rem labore minima, sit fugiat.</p>
+							<p class="precioTiendita">14.20<span class="fas fa-euro-sign"></span></p>
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3">
+							<button class="btn btn-warning">Comprar</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5 col-md-offset-1 ">
+				<div class="tiendita fondito">
+					<div class="row">
+						<img class=" zoom imagenTiendita img-responsive col-md-5" src="img/funkoHagrid.jpg" alt="">
+						<div class="col-md-5 col-md-offset-1" >
+							<p class="textoTiendita">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequatur odio doloribus epsum domun repudiandae autem officia qui magni. Beatae recusandae nemo temporibus ratione nobis, suscipit.</p>
+							<p class="precioTiendita">24.20<span class="fas fa-euro-sign"></span></p>
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3">
+							<button class="btn btn-warning">Comprar</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-5 col-md-offset-1 ">
+				<div class="tiendita fondito">
+					<div class="row">
+						<img class=" zoom imagenTiendita img-responsive col-md-5" src="img/giratiempo.jpg" alt="">
+						<div class="col-md-5 col-md-offset-1" >
+							<p class="textoTiendita">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ex expedita minus eum. Vitae possimus at, explicabo laborum inventore tempore autem corrupti cupiditate nobis? Dolor quod sint, odio.</p>
+							<p class="precioTiendita">13.50<span class="fas fa-euro-sign"></span></p>
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3">
+							<button class="btn btn-warning">Comprar</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5 col-md-offset-1 ">
+				<div class="tiendita fondito">
+					<div class="row">
+						<img class=" zoom imagenTiendita img-responsive col-md-5" src="img/hedwig.jpg" alt="">
+						<div class="col-md-5 col-md-offset-1" >
+							<p class="textoTiendita">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, magnam, rem. Est soluta aspernatur, vel beatae deleniti, veniam odit vero nam tempore expedita adipisci enim neque, ipsam nobis quaerat consectetur.</p>
+							<p class="precioTiendita">14.25<span class="fas fa-euro-sign"></span></p>
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3">
+							<button class="btn btn-warning">Comprar</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-5 col-md-offset-1 ">
+				<div class="tiendita fondito">
+					<div class="row">
+						<img class=" zoom imagenTiendita img-responsive col-md-5" src="img/cervezaMante.jpg" alt="">
+						<div class="col-md-5 col-md-offset-1" >
+							<p class="textoTiendita">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore fugit in quas delectus quaerat, recusandae ex, illum doloribus eveniet ab mollitia corporis tempora alias nam deleniti! Ex eius autem, quaerat?</p>
+							<p class="precioTiendita">7.56<span class="fas fa-euro-sign"></span></p>
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3">
+							<button class="btn btn-warning">Comprar</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-5 col-md-offset-1 ">
+				<div class="tiendita fondito">
+					<div class="row">
+						<img class=" zoom imagenTiendita img-responsive col-md-5" src="img/corbata.jpg" alt="">
+						<div class="col-md-5 col-md-offset-1" >
+							<p class="textoTiendita">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia esse mollitia vero nulla soluta ducimus voluptate vel quaerat dignissimos reprehenderit consequuntur, ad voluptatibus modi ab laborum dolor veritatis.</p>
+							<p class="precioTiendita">20.36<span class="fas fa-euro-sign"></span></p>
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3">
+							<button class="btn btn-warning">Comprar</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<footer>
+		<h4>Página creada por Sony</h4>
+		<div class="flotar size30">
+			<span class="fas fa-headset chiqui"></span>
+			<span class="fas fa-gamepad chiqui"></span>
+			<span class="fab fa-wizards-of-the-coast chiqui"></span>
+			<span class="fab fa-twitch chiqui"></span>
+			<span class="fab fa-steam-square chiqui"></span>
+			<span class="fab fa-xbox chiqui"></span>
+		</div>
+	</footer>
+
+
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js.js"></script>
+
+</body>
+</html>

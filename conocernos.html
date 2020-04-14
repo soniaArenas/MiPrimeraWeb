@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loki's Games</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body>
+<header>
+
+				<nav class="navbar navbar-inverse" id="barrita">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>                        
+							</button>
+							<a class="navbar-brand" href="#">
+								<div class="box">
+									<div class="inner">
+										<span>Loki's Games</span>
+									</div>
+									<div class="inner">
+										<span>Loki's Games</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li >
+									<a  href="pc.html">PC </a>
+									
+								</li>
+								<li >
+									<a href="ps.html">PS4 </a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Frikadas <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="potter.html">Harry Potter</a></li>
+									</ul>
+								</li>
+								<li><a href="noticias.html">Noticias</a></li>
+								<li><a href="conocernos.html">Ven a conocernos</a></li>
+							</ul>
+
+
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="registro.html"><span class="glyphicon glyphicon-user"></span> Regístrate</a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Inicia sesión<span class="caret"></span></a>
+									<ul class="dropdown-menu w400">
+										<li>
+
+											<form name="logueo" class="form-vertical">
+												<div class="form-group">
+													<label for="usuario"  class=" control-label">Usuario</label>
+													<div class="col-sm-10">
+														<input type="text" name="usuario" class="form-control" id="user" placeholder="Usuario">
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="password" class="col-sm-2 control-label">Pass</label>
+													<div class="col-sm-10">
+														<input type="password" name="pass" id="inputPass" class="form-control"   placeholder="Contraseña">
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-offset-2 col-sm-10">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox"> Recuerdame
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-offset-2 col-sm-10">
+														<button type="button" onclick="login()" class="btn btn-default">Inicia sesion</button>
+													</div>
+												</div>
+											</form>
+
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+<div class="container">	
+<div class="row">	
+<div class="col-md-6 col-md-offset-3">	
+	<section>	
+		<article>
+			<div class="fondito2">
+			<h2 class="text sombra" >¡Ven a conocernos!</h2>
+			</div>
+
+			<div class="callejon fondito">
+			<h4 class="textpeque">Teléfono</h4>
+			<p>678956325</p>
+			</div>
+			<div class="callejon fondito">
+			<h4 class="textpeque">Mail</h4>
+			<p>lokisgames@gmail.com</p>
+			</div>
+			<div class="callejon fondito" >
+			<h4 class="textpeque">Dirección</h4>
+			<p>Callejón Diagón. Entrada en la calle Charing Crosspor el Caldero Chorreante, por la pared del fondo. </p>
+			<div id="mapa">
+				<div id="mapaInterior">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.130941537171!2d-0.12923918489957964!3d51.51081367963564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605e58d2439a9%3A0x87b434d5bbdff4a8!2zQ2FsbGVqw7NuIERpYWfDs24!5e0!3m2!1ses!2ses!4v1558264241652!5m2!1ses!2ses" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen ></iframe>
+			</div>
+			</div>
+			
+			</div>
+
+		</article>
+
+		<article>	
+			<!-- <img class="tienda" src="img/tienda.jpg" alt=""> -->
+
+		</article>
+
+	</section>
+</div>
+</div>
+</div>
+<footer>
+		<h4>Página creada por Sony</h4>
+		<div class="flotar size30">
+			<span class="fas fa-headset chiqui"></span>
+			<span class="fas fa-gamepad chiqui"></span>
+			<span class="fab fa-wizards-of-the-coast chiqui"></span>
+			<span class="fab fa-twitch chiqui"></span>
+			<span class="fab fa-steam-square chiqui"></span>
+			<span class="fab fa-xbox chiqui"></span>
+		</div>
+		
+	</footer>
+
+
+	<script src="js/jquery-3.4.1.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</body>
+	</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registro</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+</head>
+<body>
+	
+	<header>
+
+				<nav class="navbar navbar-inverse" id="barrita">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>                        
+							</button>
+							<a class="navbar-brand" href="#">
+								<div class="box">
+									<div class="inner">
+										<span>Loki's Games</span>
+									</div>
+									<div class="inner">
+										<span>Loki's Games</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li >
+									<a  href="pc.html">PC </a>
+									
+								</li>
+								<li >
+									<a href="ps.html">PS4 </a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Frikadas <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="potter.html">Harry Potter</a></li>
+									</ul>
+								</li>
+								<li><a href="noticias.html">Noticias</a></li>
+								<li><a href="conocernos.html">Ven a conocernos</a></li>
+							</ul>
+
+
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="registro.html"><span class="glyphicon glyphicon-user"></span> Regístrate</a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Inicia sesión<span class="caret"></span></a>
+									<ul class="dropdown-menu w400">
+										<li>
+
+											<form name="logueo" class="form-vertical">
+												<div class="form-group">
+													<label for="usuario"  class=" control-label">Usuario</label>
+													<div class="col-sm-10">
+														<input type="text" name="usuario" class="form-control" id="user" placeholder="Usuario">
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="password" class="col-sm-2 control-label">Pass</label>
+													<div class="col-sm-10">
+														<input type="password" name="pass" id="inputPass" class="form-control"   placeholder="Contraseña">
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-offset-2 col-sm-10">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox"> Recuerdame
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-offset-2 col-sm-10">
+														<button type="button" onclick="login()" class="btn btn-default">Inicia sesion</button>
+													</div>
+												</div>
+											</form>
+
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+	<div class="col-md-5 col-md-offset-1 fondito">
+		<form action="" method="post" enctype="multipart/form-data">
+
+			<h3 class="text">Registro</h3>
+
+				<label for="nombre">Nombre:</label> 
+				   <input type="text" id="nombre" autofocus="true"  required="true" value="Loki"  onfocus="this.value=''"  />
+
+				<label for="apellidos">Apellidos: </label>
+				   <input type="text" id="apellidos" class="crecer" value="Loki" required="true"  onfocus="this.value=''"/>
+				<label for="telf">Teléfono</label>
+				   <input type="tel" id="telf" required="true" value="658965321" onfocus="this.value=''">
+				<label for="mail">Email</label>
+				   <input type="email" id="mail" required="true" value="email@email.com" onfocus="this.value=''" />	
+				 <label for="pass">contraseña</label>
+					<input type="password" id="pass" required="true" value="Pass" onfocus="this.value=''"/>
+				<label for="pass">Confirmar contraseña</label>
+					<input type="password" id="pass" required="true" value="Pass" onfocus="this.value=''"/>
+				 <label for="fecha">Fecha cumpleaños</label>
+ 					 <input type="date" name="cumple" id="fecha" min="1900-12-31" max="2100-01-02"  />
+
+
+			   <label for="direccion">Dirección</label>
+                <textarea style="padding: 5px;" name="direccion" id="direccion" placeholder="Calle Falsa Nº123 4º 1ª" cols="30" rows="5" required="required" onfocus="this.value=''"></textarea>
+                
+                <label for="codigopostal">Código Postal</label>
+                <input type="text" id="codigopostal"value="08300" maxlength="5" required="required" onfocus="this.value=''">
+                
+                <label for="pais">País</label>
+                <select name="pais" id="pais" required="true" >
+                    <option value="EEUU">EE.UU</option>
+                    <option value="FR">Francia</option>
+                    <option value="ES" selected>España</option>
+                    <option value="AL">Alemania</option>
+                    <option value="PR">Portugal</option>
+
+                </select>
+                 <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox"><a class="noColor" href="	">Política de privacidad</a>
+          <label>
+		  <input  id="botonAcepta" type="checkbox" name="check" onclick="acepta();"> Accepto las condiciones</label>
+        </div>
+      </div>
+    </div>
+			
+
+             <input onclick="Alert.render('Inicia sesión para entrar en tu cuenta!')" style="display: none;" id="botoncillo" type="button" value="Enviar" id="enviar"  >
+
+
+	<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxhead"></div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
+
+			</fieldset>
+
+		</form>
+	</div>
+
+
+	<aside class="col-md-4 col-md-offset-1 fondito">
+
+				<h4>&mdash;También puedes registrarte con...&mdash;</h4>
+
+			<a href="https://twitter.com/" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+		<a href="https://es-es.facebook.com/" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+		<a href="" class="btn btn-block btn-google"> <i  class="fab fa-google-plus-g pr-1"></i>   Login via Google</a>
+   
+	</aside>
+
+<div class="row">
+
+	<div class="col-md-12">
+<footer>
+		<h4>Página creada por Sony</h4>
+		<div class="flotar size30">
+			<span class="fas fa-headset chiqui"></span>
+			<span class="fas fa-gamepad chiqui"></span>
+			<span class="fab fa-wizards-of-the-coast chiqui"></span>
+			<span class="fab fa-twitch chiqui"></span>
+			<span class="fab fa-steam-square chiqui"></span>
+			<span class="fab fa-xbox chiqui"></span>
+		</div>
+	</footer>
+</div>
+</div>
+
+
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js.js"></script>
+	<script src="validacion.js"></script>
+	
+	
+</body>
+</body>
+</html>

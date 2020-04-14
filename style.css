@@ -1,0 +1,1027 @@
+/***Estilos generales***/
+*{
+ margin: 0px;
+ padding: 0px;
+
+
+ 
+
+
+}
+
+@font-face{ font-family:"baloo"; 
+src: url('fonts/baloo/baloo.ttf');}
+.w400{
+	width: 400px;
+}
+
+body{ 
+  background-image: url(img/homoRojo2.jpg); 
+  background-attachment: fixed;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  font-family: "baloo";
+}
+img{
+  border-radius: 10px;
+}
+
+#contenedor{ 
+	
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 25px;
+	padding: 20px;
+	
+	box-shadow: 2px 2px 3px black,
+  2px 2px 3px darkred,
+  -2px -2px 3px darkred,
+  -2px -2px 3px black;
+
+  
+
+}
+h2{ color:black;
+	text-align: center;
+
+}
+
+.tomate{text-align: center;
+  color: tomato;
+}
+
+#peque{
+  color: tomato;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+#noti{ 
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 25px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+
+  box-shadow: 2px 2px 3px black,
+  -2px -2px 3px black;
+}
+
+
+.btn, .btn-default{ background-color: tomato; 
+
+
+}
+
+#cosito{ 
+ background-color: rgba(255,255,255,0.3);
+ border-radius: 25px;
+ box-shadow: 2px 2px 3px black,
+ -2px -2px 3px black;
+
+}
+a{ text-decoration: none; 
+ text-align: center;
+ color: black;
+ font-weight: bold;
+
+}
+ #linkito:hover{
+  text-decoration: none !important;
+  color: black;
+}
+
+
+.fondito{
+  background-color:  rgba(255,255,255,0.3);
+  border-radius: 25px;
+  box-shadow: 2px 2px 3px black,
+  -2px -2px 3px black;
+  position: relative;
+}
+
+
+.fondito2{
+
+
+  background-color:  rgba(255,255,255,0.7);
+  border-radius: 25px;
+  position: relative;
+
+}
+.marginT20{ 
+  margin-top: 20px;
+}
+
+.flotar{
+  float: left;
+  margin-top:7px;
+
+
+}
+.size30{
+  font-size: 25px;
+}
+.size20{
+  font-size: 20px;
+}
+
+.menosPadding30{
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.flotarDere{
+  float: right;
+}
+
+.imgJuegos{
+  height: 200px;
+  width: auto;
+  padding: 10px;
+}
+
+a.noFondo:hover {
+  background: transparent;
+}
+a:hover{
+   background: transparent;
+   text-decoration: none;
+   color: black;
+}
+
+label{
+  color:black;
+}
+#botoncillo{
+    background-color: darkred;
+    color:black;
+
+}
+/*****Estilos del Nav*****/
+
+#myNavbar{
+  background-color: black;
+
+}
+
+.navbar-inverse {
+  background-color: black;
+  border-color: #080808;
+}
+#tu{
+  color: darkred;
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+/**Estilos slaider**/
+
+#slider{ clear: both;
+  width: 500px;
+  height: 300px;
+  margin: 20px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-image: url(img/wot500.png),
+  url(img/wow500.jpg),
+  url(img/sims500.png),
+  url(img/mine500.jpg);
+  background-position: 0px 0px,
+  -500px 0px,
+  -1000px 0px,
+  -1500px 0px;
+  background-repeat: no-repeat, no-repeat,no-repeat, no-repeat;
+  animation-name: backgrounds;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+#slider p{display: none;}
+
+@keyframes backgrounds{
+ 0%{ background-position: 0px 0px,
+  -500px 0px,
+  -1000px 0px,
+  -1500px 0px;}
+
+  50%{ background-position: 500px 0px,
+   0px 0px,
+   -500px 0px,
+   -1000px 0px; }
+
+   75%{ background-position: 1000px 0px,
+     500px 0px,
+     0px 0px,
+     -500px 0px; }
+
+     100%{ background-position: 1500px 0px,
+       1000px 0px,
+       500px 0px,
+       0px 0px;}
+     }
+
+     /***Estilo slider ps4***/
+
+
+     #sliderPS4{ clear: both;
+      width: 500px;
+      height: 300px;
+      margin: 20px auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      background-image: url(img/ps4.jpg),
+      url(img/fortnite.jpg),
+      url(img/lineage.jpg),
+      url(img/mine500.jpg);
+      background-position: 0px 0px,
+      -500px 0px,
+      -1000px 0px,
+      -1500px 0px;
+      background-repeat: no-repeat, no-repeat,no-repeat, no-repeat;
+      animation-name: fondos;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+
+    }
+    #sliderPS4 p{display: none;}
+
+    @keyframes fondos{
+     0%{ background-position: 0px 0px,
+      -500px 0px,
+      -1000px 0px,
+      -1500px 0px;}
+
+      50%{ background-position: 500px 0px,
+       0px 0px,
+       -500px 0px,
+       -1000px 0px; }
+
+       75%{ background-position: 1000px 0px,
+         500px 0px,
+         0px 0px,
+         -500px 0px; }
+
+         100%{ background-position: 1500px 0px,
+           1000px 0px,
+           500px 0px,
+           0px 0px;}
+
+         }
+
+
+         #sliderCosis{ clear: both;
+           width: 500px;
+           height: 300px;
+           margin: 20px auto;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           border-radius: 10px;
+           background-image: url(img/flores1.jpg),
+           url(img/tazaHarry.jpg),
+           url(img/camisetaMario.jpg),
+           url(img/chan.jpg),
+           url(img/toyStory.jpg);
+           background-position: 0px 0px,
+           -500px 0px,
+           -1000px 0px,
+           -1500px 0px,
+           -2000px 0px;
+           background-repeat: no-repeat, no-repeat,no-repeat, no-repeat;
+           animation-name: cosis;
+           animation-duration: 20s;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+
+         }
+         #sliderCosis p{display: none;}
+
+         @keyframes cosis{
+          0%{ background-position: 0px 0px,
+            -500px 0px,
+            -1000px 0px,
+            -1500px 0px,
+            -2000px 0px;
+          }
+
+          25%{ background-position: 500px 0px,
+            0px 0px,
+            -500px 0px,
+            -1000px 0px,
+            -1500px 0px;
+          }
+
+          50%{ background-position: 1000px 0px,
+            500px 0px,
+            0px 0px,
+            -500px 0px,
+            -1000px 0px;
+          }
+
+          75%{ background-position: 1500px 0px,
+            1000px 0px,
+            500px 0px,
+            0px 0px,
+            -500px 0px;
+          }
+
+          100%{ background-position: 2000px 0px,
+            1500px 0px,
+            1000px 0px,
+            500px 0px,
+            0px 0px;
+          }
+
+        }
+
+
+
+
+
+        /***Estilos letras chulas***/
+
+
+
+
+        x-sign {
+         color: tomato;
+         --color1: orangered;
+         --color2: firebrick;
+         --color3: maroon;
+         --color4: darkred;
+         font-family: Yellowtail;
+         --interval: 1s;
+         display: block;
+         text-shadow: 
+         0 0 10px var(--color1),
+         0 0 20px var(--color2),
+         0 0 40px var(--color3),
+         0 0 80px var(--color4);
+         will-change: filter, color;
+         filter: saturate(60%);
+         animation: flicker steps(100) var(--interval) 1s infinite;
+       }
+
+       @keyframes flicker {
+        50% {
+          color: white;
+          filter: saturate(200%) hue-rotate(20deg);
+        }
+      }
+
+
+
+      .loki{
+        font-size: 50px;
+        font-family: 'baloo';
+        color: darkred;
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px darkred,
+        0 0 30px maroon,
+        0 0 40px firebrick,
+        0 0 55px orangered,
+        0 0 75px tomato;
+        text-align: center;
+      }
+
+      /***Estilo del aside*****/
+
+      aside img{
+        border-radius: 20px;
+      }
+
+
+
+      /***Estilos registro*****/
+
+      .dropdown-menu{
+       background-image: linear-gradient(to bottom right, darkred, black);
+       border-radius: 25px;
+     }
+       
+
+
+     /****Estilo prueba*****/
+
+     .box {
+      display: flex;
+      position: relative;
+      top: -15px;
+      left: -20px;
+    }
+
+    .box .inner {
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 15px;
+      font-family: "baloo";
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .box .inner:first-child {
+      background-color: #AF0010FF;
+      color: black;
+      transform-origin: right;
+      transform: perspective(100px) rotateY(-15deg);
+    }
+
+    .box .inner:last-child {
+      background-color: black;
+      color: #AF0010FF;
+      transform-origin: left;
+      transform: perspective(100px) rotateY(15deg);
+    }
+
+    .box .inner span {
+      position: absolute;
+      animation: marquee 5s linear infinite;
+    }
+
+    .box .inner:first-child span {
+      animation-delay: 2.5s;
+      left: -100%;
+    }
+
+    @keyframes marquee {
+      from {
+        left: 100%;
+      }
+
+      to {
+        left: -100%;
+      }
+    }
+
+
+    /*******Estilos nav prueb************/
+
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #555;
+      background-color: tomato;
+    }
+
+
+    /**row****/
+    .row.content {height:auto;} 
+    
+
+    /***********Estilos registro*********************/
+
+    #coso{ 
+      background-color: rgba(255,255,255,0.3);
+      width: 400px;
+
+
+      padding: 20px;
+      border:2px dashed darkred;
+      border-radius: 20px;
+      color: black;
+      position: absolute;
+      top: 60px;
+      left: 200px;
+
+    }
+
+    label, input{ 
+      display: block;
+      border-radius: 10px; 
+      border-color: darkred;
+      padding: 5px;
+      margin: 2px 2px 2px 2px;
+    }
+    input{
+      box-shadow: 2px 2px 2px black;
+    }
+
+    legend{
+      color
+    }
+
+    .uau{
+      color:red;
+    }
+
+    .btn-facebook {
+      background-color: #405D9D;
+      color: #fff;
+      width: 155px;
+      margin: 10px auto;
+      border-radius: 15px;
+    }
+    .btn-twitter {
+      background-color: #42AEEC;
+      color: #fff;
+      width: 155px;
+      margin: 10px auto;
+      border-radius: 15px;
+    }
+    .btn-google{
+      background-color: #DD4B39;
+      color: #fff;
+      width: 155px;
+      margin: 10px auto;
+      border-radius: 15px;
+    }
+
+    h4{ 
+      text-align: center;
+    }
+
+    #facil{
+      width: 200px;
+      background-color: rgba(255,255,255,0.3);
+      margin: 20px auto;
+      padding: 20px;
+      border:2px dashed darkred;
+      border-radius: 20px;
+      color: black;
+      position: absolute;
+      top: 60px;
+      left: 700px;
+
+    }
+
+    .text {
+      text-transform: uppercase;
+      background: linear-gradient(to right, darkred 0%, black 60%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 50px;
+
+      border-image: linear-gradient(to right, darkred 0%, black 60%);
+
+    }
+
+    .textpeque{ 
+      text-transform: uppercase;
+      background: linear-gradient(to right, darkred 0%, black 60%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 25px;t
+      padding:5px;
+
+      border-image: linear-gradient(to right, darkred 0%, black 60%);
+
+    }
+    #pais{
+      margin-bottom: 10px;
+      border:2px solid darkred;
+      border-radius: 20px;
+      box-shadow: 2px 2px 2px black;
+    }
+    #direccion{
+     border:2px solid darkred;
+     border-radius: 20px;
+     box-shadow: 2px 2px 2px black;
+   }
+
+#botoncito{
+     background-image: linear-gradient(to bottom right, red, black);
+    margin-bottom: 20px;
+    color: black;
+   }
+
+
+   /************Estilo conocernos*********************/
+
+  
+
+  div p{ text-align: center;
+   color: black; }
+
+
+   #mapa{
+    position: relative;
+
+    padding: 20px;
+
+  }
+
+  #mapaInterior{
+    border-radius: 20px;
+    overflow: hidden;
+    height: 400px;
+  }
+
+
+
+  /******Estilos de tienda**************/             
+
+  .imagenTiendita{
+    float: left; 
+    z-index: 50;
+
+  }
+  .zoom:hover {
+  transform: scale(2); 
+}
+  .tiendita{ 
+    padding: 50px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+  }
+  .textoTiendita{
+    text-align: center; 
+  }
+  .precioTiendita p{ text-align: center;
+
+  }
+
+  .centrito{
+    margin: 0px auto;
+  }
+
+  
+
+
+  .notis img{
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+
+
+  }
+
+  .notis img.dere{
+    float: right;
+    margin-right: 20px;
+    width: 300px;
+
+
+  }
+  .notis h3{ 
+    text-align: center;
+  }
+
+  .notis{ height: 250px;
+    vertical-align: middle;
+  }
+
+  .dropdown-menu a:hover { background-color: none !important; }
+  .dropdown-menu > li > a:hover{
+    background-color: none;
+  }
+
+
+
+  footer{ 
+    width: 100%;
+    background-image: linear-gradient(to right, darkred 0%, black 60%);
+  }
+
+  footer h4{
+   color: darkred;
+   text-align: center;
+   display: inline-block;
+   width: 40%;
+
+ }
+
+ #cuentavisitas{
+  padding-right: 20px;
+  padding-top: 8px;
+  color: darkred;
+
+     
+ }
+
+ .chiqui{
+  size: 7x;
+  color:black;
+  margin-left: 10px;
+
+}
+
+
+
+
+.protectora h3{
+
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  z-index: 1;
+  position: absolute;
+  top: 270px;
+  left: 60px;
+
+}
+.protectora{
+  position:relative; 
+}
+
+/******Estilos consolas*****************/
+
+div#bola1{ width: 200px;
+ height: 200px;
+ border-radius: 100px;
+ background-image: url(img/bola1.jpg);
+ animation-name: bola1;
+ animation-duration: 30s;
+ animation-iteration-count: infinite;
+ position: relative;
+}
+
+div#bola2{ width: 200px;
+ height: 200px;
+ border-radius: 100px;
+ background-image: url(img/bola2.jpg);
+ margin-left: 500px;
+ animation-name: bola2;
+ animation-duration: 30s;
+ animation-iteration-count: infinite;
+ position: relative;
+
+}
+
+div#bola3{    width: 200px;
+ height: 200px;
+ border-radius: 100px;
+background-image: url(img/bola3.jpg);
+
+ margin-bottom: 300px;
+ animation-name: bola3;
+ animation-duration: 30s;
+ animation-iteration-count: infinite;
+ position: relative;
+
+}
+
+
+div#bola4{    width: 200px;
+ height: 200px;
+ border-radius: 100px;
+background-image: url(img/bola4.jpg);
+ margin-bottom: 300px;
+ animation-name: bola4;
+ animation-duration: 30s;
+ animation-iteration-count: infinite;
+ position: relative;
+
+}
+
+@keyframes bola1{
+
+  0%{left: 0px; top: 0px;}
+  15%{left: 200px; top: 200px;}
+  25%{left: 750px; top: 50px;}
+  50%{left: 1000px; top: 100px;}
+  60%{left: 500px; top: 200px;}
+  75%{left: 200px; top: 600px;}
+  90%{left: 100px;top: 400px;}
+  100%{left: 0px; top: 0px;}}
+
+
+  @keyframes bola2{
+
+    0%{left: 0px; top: 0px;}
+    15%{left: 500px; top: 500px;}
+    25%{left: 200px; top: 250px;}
+    50%{left: 300px; top: 200px;}
+    60%{left: 100px; top: 400px;}
+    75%{left: 1000px;top: 30;}
+    100%{left: 0px; top: 0px;}}
+
+
+    @keyframes bola3{
+
+      0%{left: 0px; top: 0px;}
+      15%{left: 400px; top: -200px;}
+      25%{left: 100px; top: -400px;}
+      50%{left: 400px; top: -100px;}
+      60%{left: 300px; top: -700px;}
+      75%{left: 30px;top: -100px;}
+      90%{left: 600px;top: -500px;}
+      100%{left: 0px; top: 0px;}
+
+    }
+
+
+    @keyframes bola4{
+
+      0%{left: 500px; top: -200px;}
+      15%{left: 500px; top: -900px;}
+      25%{left: 900px; top: -300px;}
+      50%{left: 900px; top: -800px;}
+      60%{left: 400px; top: 100px;}
+      75%{left: 600px;top: -400px;}
+      90%{left: 100px;top: -400px;}
+      100%{left: 0px; top: 0px;}
+
+    }
+
+    .bola1, .bola2, .bola3, .bola4{
+      position: relative;
+    }
+/*********prueba de alerts************/
+.dgcAlert {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+  height: 1000px; 
+  background: url(http://www.dgcmedia.es/recursosExternos/fondoAlert.png) repeat; 
+  text-align:center; 
+  opacity:0; 
+  display:none; 
+  z-index:999999999999999;
+}
+.dgcAlert .dgcVentana{
+  width: 500px; 
+  background-image: linear-gradient(to right, #FF7F7FFF 0%, #545454BF 60%);
+  min-height: 150px;
+  position: relative;
+  margin: 0 auto;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+.dgcAlert .dgcVentana .dgcCerrar {
+  height: 25px;
+  width: 25px;
+  float: right; 
+  cursor:pointer;
+  background: url(https://img.icons8.com/metro/26/000000/close-window.png) no-repeat center center;
+ 
+ }
+.dgcAlert .dgcVentana .dgcMensaje { 
+  margin: 0 auto;
+   padding-top: 45px; 
+   text-align: center;
+   width: 400px;
+   font-size: 20px;
+ }
+.dgcAlert .dgcVentana .dgcAceptar{
+  background-image: linear-gradient(to right, darkred 0%, black 60%); 
+  bottom:20px; 
+  display: inline-block; 
+  font-size: 12px; 
+  font-weight: bold; 
+  height: 24px; 
+  line-height: 24px; 
+  padding-left: 5px; 
+  padding-right: 5px;
+  text-align: center; 
+  text-transform: uppercase; 
+  width: 75px;
+  cursor: pointer; color:darkred; margin-top:50px;}
+
+
+  #videoIncio{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+
+   
+ 
+  
+    
+
+  }
+
+  #videoInicio p{
+  position: absolute;
+  top:40%;
+  left: 40%;
+  z-index:101;
+  color:purple;
+
+  }
+
+
+
+  /****************************************************/
+
+
+#fase1{
+  float: left;
+  position: absolute;
+  top: -1000px;
+  left: 0px;
+
+}
+}
+#fase2{
+
+  float: left;
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+
+ 
+}
+
+
+div#fase1{ 
+ 
+ animation-name: fase1;
+ animation-duration: 10s;
+ animation-iteration-count: 1;
+ 
+position: absolute;
+  top: -1000px;
+  left: 0px;
+
+}
+div#fase2{ 
+ 
+ 
+ animation-name: fase2;
+ animation-duration: 10s;
+ animation-iteration-count: 1;
+  position: absolute;
+  top: -1000px;
+  left: 1000px;
+
+
+}
+
+ @keyframes fase1{
+
+         0%{left: 0%; top: 0%;}
+
+         100%{left: 45%; top: 40%;}}
+
+ @keyframes fase2{
+
+         0%{left: 80%; top: 0%;}
+ 
+         100%{left: 40%; top: 70%;}}
+
+/*********************************************************************/
+
+
+.fotoPeque{
+  width: 300px;
+  border-radius: 150px;
+  margin: 0px auto;
+}
+
+
+
+.colorcito{
+  padding: 0px;
+  margin: 10px auto;
+ width: 100px;
+
+}
+
+
+.preferencias{
+  margin: 10px auto;
+  text-align: center;
+}
+
+.letrasSaludo{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+////////////////**********Estilo del alert***********************//
+
+  #dialogoverlay{
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: darkred;
+  width: 100%;
+  z-index: 10;
+}
+#dialogbox{
+  display: none;
+  position: fixed;
+  background: #000;
+  border-radius:7px; 
+  width:550px;
+  z-index: 10;
+}
+#dialogbox > div{ background:darkred; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background-image: linear-gradient(to right, darkred 0%, black 100%);  font-size:19px; padding:10px; color:black; }
+#dialogbox > div > #dialogboxbody{ background: black; padding:20px; color:darkred; }
+#dialogbox > div > #dialogboxfoot{background-image: linear-gradient(to right, darkred 0%, black 100%); padding:10px; text-align:right;color: black; }
+
+#botoncito{
+  background: darkred;
+  border-color: black;
+  border-radius: 5px;
+}

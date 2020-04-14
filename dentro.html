@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Al fin llegas!!!</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+	
+	
+</head>
+<body onload="holi(); mueveReloj()">
+	<header>
+	<nav class="navbar navbar-inverse" id="barrita">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>                        
+							</button>
+							<a class="navbar-brand" href="#">
+								<div class="box">
+									<div class="inner">
+										<span>Loki's Games</span>
+									</div>
+									<div class="inner">
+										<span>Loki's Games</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li >
+									<a  href="pc.html">PC </a>
+									
+								</li>
+								<li >
+									<a href="ps.html">PS4 </a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Frikadas <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="potter.html">Harry Potter</a></li>
+									</ul>
+								</li>
+								<li><a href="noticias.html">Noticias</a></li>
+								<li><a href="conocernos.html">Ven a conocernos</a></li>
+							</ul>
+
+
+
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<form name="form_reloj"> 
+<input type="text" name="reloj" size="10" style="background-color : Black; color : White; font-family : Verdana, Arial, Helvetica; font-size : 8pt; text-align : center; margin-top: 10px;" onfocus="window.document.form_reloj.reloj.blur()"> 
+</form> 
+							</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Mi cuenta<span class="caret"></span></a>
+							<ul class="dropdown-menu w400">
+								<li>
+									<a class="noFondo" href="#">Mi cesta</a>
+									<a class="noFondo" href="#">Control de Cuenta</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+<div class="container">	
+<div class="row">
+	<div class="col-md-12">
+		<section>
+			<div id="cambioFondo" class="fondito2">
+
+			<img  class=" fotoPeque img-circle img-responsive" src="img/bitmoji.png" alt="">
+			<h2 class="letrasSaludo" >Bienvenid@ <span class="letrasSaludo" id="tu" style="font-size: 40px;">!!</span>  </h2>
+			
+			<p>Desde aqui puedes acceder a todo lo relcionado con tu cuenta. </p>
+			<p>Te haré alguna pregunta más para intentar que todo esté a tu gusto.</p>
+
+			<div   class=" preferencias ">
+			<label for="color">¿Cual es tu color favorito?</label>
+			<input class="colorcito" type="color" onchange="cambioColor(this.value)">
+		</div>
+			</div>
+		</section>
+</div>
+</div>
+</div>
+		<script src="js/jquery-3.4.1.js"></script>
+		<script src="js/bootstrap.js"></script>
+
+		<script src="js.js"></script>
+</body>
+</html>

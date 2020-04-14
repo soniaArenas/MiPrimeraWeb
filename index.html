@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loki's Games</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+	<link rel="stylesheet" href="style.css">
+
+	
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
+<!-- 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	
+ -->
+
+</head>
+<body>
+
+
+	<div class="video-responsive videoInicio" > 
+		<video  autoplay="autoplay" muted="muted" height="100%" style="width: 100%;  background: #000; 
+		opacity: .50;  "> 
+		<source src="img/Fire-Snow-Fire-Snow.mp4" type="video/mp4"> 
+
+		</div>
+		<div class="letrasInicio">
+			<div id="fase1">
+				<x-sign>
+					<h1 class="loki " >Loky's Games!</h1>
+				</x-sign>
+			</div>
+			<div id="fase2">
+				<x-sign>
+					<h2 class="loki fase2">Juegos, Consolas y Más!</h2>
+
+				</x-sign>
+			</div>
+		</div>
+
+		<div class="pag" style="display:none;"  >
+			<header>
+
+				<nav class="navbar navbar-inverse" id="barrita">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>                        
+							</button>
+							<a class="navbar-brand" href="#">
+								<div class="box">
+									<div class="inner">
+										<span>Loki's Games</span>
+									</div>
+									<div class="inner">
+										<span>Loki's Games</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li >
+									<a  href="pc.html">PC </a>
+									
+								</li>
+								<li >
+									<a href="ps.html">PS4 </a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Frikadas <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="potter.html">Harry Potter</a></li>
+									</ul>
+								</li>
+								<li><a href="noticias.html">Noticias</a></li>
+								<li><a href="conocernos.html">Ven a conocernos</a></li>
+							</ul>
+
+
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="registro.html"><span class="glyphicon glyphicon-user"></span> Regístrate</a>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Inicia sesión<span class="caret"></span></a>
+									<ul class="dropdown-menu w400">
+										<li>
+
+											<form name="logueo" class="form-vertical">
+												<div class="form-group">
+													<label for="usuario"  class=" control-label">Usuario</label>
+													<div class="col-sm-10">
+														<input type="text" name="usuario" class="form-control" id="user" placeholder="Usuario">
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="password" class="col-sm-2 control-label">Pass</label>
+													<div class="col-sm-10">
+														<input type="password" name="pass" id="inputPass" class="form-control"   placeholder="Contraseña">
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-offset-2 col-sm-10">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox"> Recuerdame
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-offset-2 col-sm-10">
+														<button type="button" onclick="login()" class="btn btn-default">Inicia sesion</button>
+													</div>
+												</div>
+											</form>
+
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<div class="container-fluid">	
+
+				<div class="row">
+					<div class="col-md-12">	
+
+						<div class="row"> 
+							<div class="col-md-12"> 
+								<section class="loki">
+									<x-sign>
+										<h1 class="tomate loki">&mdash;Loky's Games!&mdash;</h1>
+										<h2 class="tomate loki">Tu mejor tienda de videojuegos!</h2>
+									</x-sign>
+								</section>
+
+							</div> 
+						</div> 
+
+
+
+
+
+
+
+						<div class="row"> 
+
+							<div class="col-md-3 col-md-offset-1"> 
+
+								<aside id="noti">
+
+
+									<h3 id="peque">Noticias</h3>
+									<div>
+										<a href="noticias.html#notiPS5"><img src="img/ps5g.jpg" alt="PS5"></a>
+										<p>Te contamos todas las novedades sobre la PS5!</p>
+										
+									</div>
+									<div>
+										<a href="noticias.html#notiSonic"><img src="img/sonic.jpg" alt=""></a>
+
+										<p>Llega el nuevo videojuego de Sonic</p>
+									</div>
+									<div>
+
+										<a href="noticias.html#notiSkirym"><img src="img/oblivion.jpg" alt=""></a> 
+										<p>Muy pronto llega, The Elder Scrolls Online Elsweyr</p>
+									</div> 
+
+									<a id="linkito" href="noticias.html"><h3 > Mucho más en nuestra seccion de noticias!</h3></a>
+
+								</aside>
+								<aside id="cosito">
+									<form class="navbar-form navbar-left" role="search">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="que quieres buscar?">
+										</div>
+										<button type="submit" class="btn btn-default">Buscar</button>
+									</form>
+								</aside>
+							
+
+							</div> 
+
+
+
+
+
+							<div class="col-md-6 col-md-offset-1"> 
+								<section id="contenedor">
+
+									<article>
+										<h2>Los mejores juegos para pc</h2>
+										<div class="img-responsive" id="slider" >
+											<p> Slider PC</p>
+										</div>
+									</article>
+									<article>
+										<h2>Increibles juegos de consola</h2>
+										<div class="img-responsive" id="sliderPS4" >
+											<p> Slider ps4</p>
+										</div>
+									</article>
+
+									<article>
+										<h2>Y muchas cosas mas!</h2>
+										<div class="img-responsive" id="sliderCosis" >
+											<p> Slider cosis</p>
+										</div>
+									</article>
+								</section>
+
+							</div> 
+
+
+
+
+
+
+
+
+						</div> 
+
+					</div>	
+				</div>	
+
+
+
+			</div>
+
+
+			<footer>
+				<h4>Página creada por Sony</h4>
+				<div class="flotar size30">
+					<span class="fas fa-headset chiqui"></span>
+					<span class="fas fa-gamepad chiqui"></span>
+					<span class="fab fa-wizards-of-the-coast chiqui"></span>
+					<span class="fab fa-twitch chiqui"></span>
+					<span class="fab fa-steam-square chiqui"></span>
+					<span class="fab fa-xbox chiqui"></span>
+				</div>
+				<div id="cuentavisitas" class="flotarDere size20 "></div>
+			</footer>
+			
+		</div>
+
+		<script src="js/jquery-3.4.1.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="fonts/fontawesome/js/all.js"></script>
+		<script src="js.js"></script>
+	</body>
+	</html>
